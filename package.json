@@ -4,7 +4,7 @@
   "scripts": {
     "start-dev": "SET NODE_ENV=development&& SET DEBUG=platzi-overflow:* && nodemon ./server.js --exec babel-node",
     "test": "ava ./test --verbose",
-    "start": "SET NODE_ENV=production node ./server.js"
+    "start": "SET NODE_ENV=production SET DEBUG=platzi-overflow:* node ./server.js"
   },
   "private": true,
   "dependencies": {
@@ -18,7 +18,7 @@
     "express-jwt": "^5.3.1",
     "jsonwebtoken": "^8.3.0",
     "moment": "^2.22.2",
-    "platzi-overflow-db": "file:../platzi-overflow-db"
+    "platzi-overflow-db": "file:./local_modules/platzi-overflow-db"
   },
   "devDependencies": {
     "ava": "^0.25.0",

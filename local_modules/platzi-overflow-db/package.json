@@ -1,0 +1,27 @@
+{
+  "name": "platzi-overflow-db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava ./test --verbose",
+    "example": "SET DEBUG=platzi-overflow:* && node ./examples/example --exec babel-node"
+  },
+  "author": "Daniel Puerta",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.1.0",
+    "mongoose": "^5.3.15",
+    "mongoose-unique-validator": "^2.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/node": "^7.2.0",
+    "ava": "^0.25.0",
+    "proxyquire": "^2.1.0",
+    "sinon": "^7.1.1"
+  },
+  "engines": {
+    "node": "8.x"
+  }
+}
