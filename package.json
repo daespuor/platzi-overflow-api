@@ -1,6 +1,6 @@
 {
   "name": "platzi-overflow-api",
-  "version": "8.11.1",
+  "version": "1.0.0",
   "scripts": {
     "start-dev": "SET NODE_ENV=development&& SET DEBUG=platzi-overflow:* && nodemon ./server.js --exec babel-node",
     "test": "ava ./test --verbose",
@@ -32,5 +32,9 @@
       "babel-register"
     ],
     "babel": "inherit"
+  },
+  "engines": {
+    "node": "8.x"
   }
+
 }
