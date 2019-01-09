@@ -45,7 +45,7 @@ const newUser={
     password:'123456'
 }
 
-const token='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImZpcnN0TmFtZSI6IkRhbmllbCIsImxhc3ROYW1lIjoiUHVlcnRhIiwiZW1haWwiOiJkYWVzcHVvckBob3RtYWlsLmNvbSIsInBhc3N3b3JkIjoiMTIzNDU2IiwiX2lkIjoxfSwiaWF0IjoxNTQ1NjkyNDU2LCJleHAiOjE1NDU3Nzg4NTZ9.-4ZXoj1Bmw1Am7XD-YUJBTbgRQQj4sAdn2Ebln5W2pM';
+const token='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImZpcnN0TmFtZSI6IkRhbmllbCIsImxhc3ROYW1lIjoiUHVlcnRhIiwiZW1haWwiOiJkYWVzcHVvckBob3RtYWlsLmNvbSIsInBhc3N3b3JkIjoiMTIzNDU2IiwiX2lkIjoxfSwiaWF0IjoxNTQ2OTk0OTMwfQ.3WVKpvX6jVNqwSTG-8dCLwsV-Ct2uZc9l6lEPhABtYg';
 export default {
     question,
     questionWithAnswers,

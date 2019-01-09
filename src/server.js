@@ -9,7 +9,7 @@ const {PORT}= require('./config/properties');
 const api = require('./api');
 const app= asyncify(express());
 const debug= new Debug('platzi-overflow:server');
-
+const path= require('path');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
@@ -23,6 +23,11 @@ if(process.env.NODE_ENV==='development'){
         next();
     });
 }
+
+/*if(process.env.NODE_ENV==='production'){
+    app.use(express.static(path.join(process.cwd(),'dist')));
+    console.log('using babel');
+}*/
 
 app.use('/api',api);
 
