@@ -5,7 +5,8 @@
     "start-dev": "SET NODE_ENV=development&& SET DEBUG=platzi-overflow:* && nodemon ./src/server.js --exec babel-node",
     "test": "ava ./src/test --verbose",
     "postinstall": "babel ./src -d dist",
-    "start": "SET NODE_ENV=production&& SET DEBUG=platzi-overflow:* && node ./dist/server.js"
+    "start:windows": "SET NODE_ENV=production&& SET DEBUG=platzi-overflow:* && node ./dist/server.js",
+    "start:unix":"NODE_ENV=production DEBUG=platzi-overflow:* node ./dist/server.js"
   },
   "private": true,
   "dependencies": {
