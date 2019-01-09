@@ -26,7 +26,7 @@ if(process.env.NODE_ENV==='development'){
 
 if(process.env.NODE_ENV==='production'){
     app.use((req,res,next)=>{
-        res.setHeader('Access-Control-Allow-Origin','platzioverflowangular.herokuapp.com');
+        res.setHeader('Access-Control-Allow-Origin','http://platzioverflowangular.herokuapp.com');
         res.setHeader('Access-Control-Allow-Headers','Origin, X-Request-With, Content-Type, Accept, Authorization');
         res.setHeader('Access-Control-Allow-Methods','GET,POST,DELETE,OPTIONS');
         console.log('Access Control Allow');
